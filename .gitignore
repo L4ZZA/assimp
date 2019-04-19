@@ -98,3 +98,4 @@ tools/assimp_qt_viewer/ui_mainwindow.h
 # build output and intermediates
 bin/
 bin-int/
+inter/
