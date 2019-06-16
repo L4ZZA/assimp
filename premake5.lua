@@ -13,6 +13,7 @@ project "assimp"
     defines 
     {
     "ASSIMP_BUILD_NO_C4D_IMPORTER", -- Cinema4D is MSVC only and needs some weird headers to work
+    "ASSIMP_BUILD_NO_EXPORT",
     "OPENDDL_STATIC_LIBARY",
     }
 
