@@ -24,7 +24,7 @@ project "assimp"
     -- "ASSIMP_BUILD_NO_MD3_IMPORTER", -- Quake III
     "ASSIMP_BUILD_NO_PLY_IMPORTER", -- Stanford Polygon Library 
     "ASSIMP_BUILD_NO_ASE_IMPORTER", -- 3ds Max ASE ( .ase ) 
-    "ASSIMP_BUILD_NO_OBJ_IMPORTER", -- obj
+    -- "ASSIMP_BUILD_NO_OBJ_IMPORTER", -- obj
     "ASSIMP_BUILD_NO_HMP_IMPORTER", -- 3D GameStudio (3DGS) Terrain
     "ASSIMP_BUILD_NO_SMD_IMPORTER", -- Valve Model ( .smd,.vta )
     "ASSIMP_BUILD_NO_MDC_IMPORTER", -- Return to Castle Wolfenstein ( .mdc )
