@@ -5,12 +5,12 @@ project "assimp"
     systemversion "latest"
     staticruntime "On"
 
-    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-    objdir ("inter/" .. outputdir .. "/%{prj.name}")
+    targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("%{wks.location}/inter/" .. outputdir .. "/%{prj.name}")
 
     warnings "Off"
 
-    defines 
+    defines
     {
     -- For more info on the formats: http://assimp.sourceforge.net/main_features_formats.html
     -- Also check ImporterRegistry.cpp for all the macro guards
@@ -68,7 +68,7 @@ project "assimp"
     "OPENDDL_STATIC_LIBARY",
     }
 
-    files 
+    files
     {
     "code/**.cpp",
     "code/**.h",
@@ -83,7 +83,7 @@ project "assimp"
     "contrib/zlib/*.h"
     }
 
-    includedirs 
+    includedirs
     {
     "config/",
     "include/",
@@ -95,7 +95,7 @@ project "assimp"
     "./"
     }
 
-    removefiles 
+    removefiles
     {
     "code/Importer/IFC/IFCReaderGen_4.*",
     }
