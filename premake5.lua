@@ -5,8 +5,8 @@ project "assimp"
     systemversion "latest"
     staticruntime "On"
 
-    targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
-    objdir ("%{wks.location}/inter/" .. outputdir .. "/%{prj.name}")
+    targetdir ("%{wks.location}/bin/" .. outputdir .. "/external/%{prj.name}")
+    objdir ("%{wks.location}/inter/" .. outputdir .. "/external/%{prj.name}")
 
     warnings "Off"
 
@@ -22,18 +22,18 @@ project "assimp"
     -- "ASSIMP_BUILD_NO_MDL_IMPORTER", -- Quake I
     -- "ASSIMP_BUILD_NO_MD2_IMPORTER", -- Quake II
     -- "ASSIMP_BUILD_NO_MD3_IMPORTER", -- Quake III
-    "ASSIMP_BUILD_NO_PLY_IMPORTER", -- Stanford Polygon Library 
-    "ASSIMP_BUILD_NO_ASE_IMPORTER", -- 3ds Max ASE ( .ase ) 
+    "ASSIMP_BUILD_NO_PLY_IMPORTER", -- Stanford Polygon Library
+    "ASSIMP_BUILD_NO_ASE_IMPORTER", -- 3ds Max ASE ( .ase )
     -- "ASSIMP_BUILD_NO_OBJ_IMPORTER", -- obj
     "ASSIMP_BUILD_NO_HMP_IMPORTER", -- 3D GameStudio (3DGS) Terrain
     "ASSIMP_BUILD_NO_SMD_IMPORTER", -- Valve Model ( .smd,.vta )
     "ASSIMP_BUILD_NO_MDC_IMPORTER", -- Return to Castle Wolfenstein ( .mdc )
     -- "ASSIMP_BUILD_NO_MD5_IMPORTER", -- Doom 3 ( .md5* )
-    "ASSIMP_BUILD_NO_STL_IMPORTER", -- Stereolithography 
-    "ASSIMP_BUILD_NO_LWO_IMPORTER", -- LightWave  
+    "ASSIMP_BUILD_NO_STL_IMPORTER", -- Stereolithography
+    "ASSIMP_BUILD_NO_LWO_IMPORTER", -- LightWave
     "ASSIMP_BUILD_NO_DXF_IMPORTER", -- AutoCad DXF
     "ASSIMP_BUILD_NO_NFF_IMPORTER", -- Neutral File Format / Sense8 WorldToolKit
-    "ASSIMP_BUILD_NO_RAW_IMPORTER", -- PovRAY Raw 
+    "ASSIMP_BUILD_NO_RAW_IMPORTER", -- PovRAY Raw
     "ASSIMP_BUILD_NO_SIB_IMPORTER", -- ??
     "ASSIMP_BUILD_NO_OFF_IMPORTER", -- Object File Format
     "ASSIMP_BUILD_NO_AC_IMPORTER",  -- AC3D
@@ -57,7 +57,7 @@ project "assimp"
     "ASSIMP_BUILD_NO_IFC_IMPORTER", -- Industry Foundation Classes (IFC/Step) ( .ifc )
     "ASSIMP_BUILD_NO_XGL_IMPORTER", -- XGL ( .xgl,.zgl )
     "ASSIMP_BUILD_NO_FBX_IMPORTER", -- Autodesk ( .fbx )
-    "ASSIMP_BUILD_NO_ASSBIN_IMPORTER", -- 
+    "ASSIMP_BUILD_NO_ASSBIN_IMPORTER", --
     "ASSIMP_BUILD_NO_GLTF_IMPORTER", -- ??
     "ASSIMP_BUILD_NO_C4D_IMPORTER", -- Cinema4D is MSVC only and needs some weird headers to work
     "ASSIMP_BUILD_NO_3MF_IMPORTER", -- ??
